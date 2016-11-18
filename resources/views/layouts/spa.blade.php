@@ -14,7 +14,6 @@
     </head>
     <body>
     <div id="app">
-        <h3>Hello World</h3>
         <router-view></router-view>
     </div>
        <script src="/js/app.js"></script>

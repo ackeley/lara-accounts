@@ -16,13 +16,21 @@ require('./bootstrap');
 // Vue.component('example', require('./components/Example.vue'));
 
 const ExampleComponent = require('./components/Example.vue');
+const LoginComponent = require('./components/Login.vue');
 
 const router = new VueRouter({
     routes:[
         {
+            name:'helloworld',
             path:'/minha-primeira-rota',
             component: ExampleComponent
+        },
+        {
+            name:'auth.login',
+            path:'/login',
+            component: LoginComponent
         }
+
     ]
 });
 const app = new Vue({
